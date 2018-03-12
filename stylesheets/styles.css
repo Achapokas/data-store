@@ -1,0 +1,67 @@
+body {
+  font-family: 'Mada', sans-serif;
+  background-color: #202a51;
+  letter-spacing: 0.8;
+}
+
+select {
+  margin: 20px 0 40px 0;
+  width: 200px;
+  height: 40px;
+  color: #fff;
+  font-size: 16px;
+  background: transparent;
+  border: 2px solid white;
+  outline: 0;
+  border-radius: 4px;
+}
+
+.select {
+  text-align: center;
+}
+
+.page-layout {
+  margin: 0 auto;
+  max-width: 1100px;
+}
+
+.graph .labels.x-labels {
+  text-anchor: middle;
+}
+
+.graph .labels.y-labels {
+  text-anchor: end;
+}
+
+
+.graph {
+  height: 800px;
+  width: 1100px;
+}
+
+.graph .grid {
+  stroke: #fff;
+  stroke-dasharray: 0;
+  stroke-width: 1;
+}
+
+.labels {
+  font-size: 13px;
+  color: white;
+}
+
+.labels text {
+  fill: white;
+}
+
+.label-title {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 12px;
+  fill: white;
+}
+
+.data {
+  fill: red;
+  stroke-width: 1;
+}
