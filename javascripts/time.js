@@ -60,21 +60,17 @@ function parseObject(response) {
           shiftTime = fetchBytes.shift(),
           shiftDate = fetchIP.shift(),
           newDate = new Date(response[i].result._time).toLocaleTimeString()
-          var sets = {};
+          var sets = [];
 
           for(let t = 0; t < fetchBytes.length; t++){
             var convertBytes = bytesToSize(fetchBytes[t]);
 
             sets[t] = {time: newDate, ip: fetchIP[t], bytes: convertBytes};
-
-            // console.log(sets[t])
           }
 
-          // console.log(sets)
-          setsFinal.push(sets[0])
-      }
+          setsFinal.push(sets)
+  }
 
-      console.log(sets)
 
   const markup = `
     <div class="select">
